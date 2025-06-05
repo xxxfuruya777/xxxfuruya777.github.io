@@ -421,6 +421,7 @@ header{
                 margin: 5% 0;
                 border-radius: 1rem;
                 color: rgb(255, 128, 0);
+                cursor: pointer;
             }
             .textshot img{
                 width: 5rem;
