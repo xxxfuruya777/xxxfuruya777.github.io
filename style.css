@@ -155,16 +155,9 @@ header{
     justify-content: flex-end; /**/
     text-shadow: 1px 1px 3px black;
 }
-    .download{
-        display: flex;
-        justify-content: center; /***/
-        margin: 1rem auto;
-        cursor: pointer;
+    .intro-text .download{
+        display: none;
     }
-        .download img {
-            width: 175px;
-            margin: 10px;
-        }
 
 
 .demo{
@@ -262,12 +255,15 @@ header{
         margin: 5rem auto 1rem; /**/
     }
 
-    .download{
+    .install{
+        display: flex;
+        justify-content: center;
         margin: 1rem 0;
     }
-    .download > img{
+    .install > img{
         width: 10rem;
         margin: 1rem;
+        cursor: pointer;
     }
 }
 
@@ -390,11 +386,29 @@ header{
                 margin: 5% 0;
             }
 
-        .download{
+        .intro-text .download{
             display: flex;
             flex-direction: column;
             justify-content: flex-start; /***/
+            margin: 2rem auto;
         }
+
+            .download > img, .qr-box {
+                width: 175px;
+                margin: 10px;
+                cursor: pointer;
+            }
+            .qr-box{
+                height: 175px;
+                display: grid;
+                place-items: center;
+                background-color: white;
+                border-radius: 1rem;
+
+                img{
+                    width: 90%;
+                }
+            }
 
     /*slideshow*/
     .slide-desktop{
@@ -415,45 +429,53 @@ header{
             justify-content: center;
         }
             .textshot{
-                display: flex;
-                align-items: center;
                 height: 9rem;
                 padding: 0.5rem;
                 margin: 5% 0;
+                position: relative;
                 border-radius: 1rem;
                 color: rgb(255, 128, 0);
                 cursor: pointer;
             }
-            .textshot img{
-                width: 5rem;
-                margin-right: calc(0.5rem + 1.6vw);
-                transition: all 0.3s linear;
+            .hoverdiv{
+                width: 100%;
+                height: 5rem;
+                position: absolute;
+                z-index: 4;
             }
-            .text p{
-                display: none;
+            .text-icon{
+                display: flex;
+                align-items: center;
+            }
+                .text-icon h2{
+                    font-size: calc(16px + 1.3vw) !important;
+                    transform: translateX(1rem);
+                    letter-spacing: 0.3;
+                    margin-bottom: 0.5rem;
+                }
+                .text-icon img{
+                    width: 5rem;
+                    margin-right: calc(0.5rem + 1.6vw);
+                    transition: all 0.3s linear;
+                }
+            .text{
                 font-size: calc(13px + 0.4vw) !important;
-                transform: translateY(-15vh);
+                transform: translateY(5vh);
+                color: #3366cc;
                 line-height: 1.5;
                 opacity: 0;
-                transition: opacity 1s linear 0.3s, transform 1s linear 1s;
-            }
-            .text h2{
-                font-size: calc(16px + 1.3vw) !important;
-                letter-spacing: 0.3;
-                margin-bottom: 0.5rem;
+                transition: all 0.3s linear;
             }
 
-            .textshot:hover{
+            .hoverdiv:hover ~ .text-icon h2{
                 color: #3366cc;
                 padding: 0;
             }
-            .textshot:hover > img{
-                visibility: hidden;
+            .hoverdiv:hover ~ .text-icon img{
                 width: 0;
                 margin: 0;
             }
-            .textshot:hover .text p{
-                display: block;
+            .hoverdiv:hover ~ .text{
                 opacity: 1.0;
                 transform: translateY(0);
             }
@@ -519,31 +541,9 @@ header{
             margin: 1rem 0 2rem;
         }
 
-        .download{
+        .install{
+            flex-direction: column;
             margin: 1rem 0.5rem 0 1rem;
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
