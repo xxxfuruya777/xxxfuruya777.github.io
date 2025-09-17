@@ -431,11 +431,11 @@ header{
             }
             .text p{
                 visibility: hidden;
-                font-size: calc(13px + 0.4vw) !important;
+                font-size: 0;
                 transform: translateY(-15vh);
                 line-height: 1.5;
                 opacity: 0;
-                transition: all 1s linear 0.3s;
+                transition: opacity 1s linear 0.3s, translateY 1s linear 0.3s, font-size 0s linear;
             }
             .text h2{
                 font-size: calc(16px + 1.3vw) !important;
@@ -454,6 +454,7 @@ header{
             }
             .textshot:hover .text p{
                 opacity: 1.0;
+                font-size: calc(13px + 0.4vw) !important;
                 visibility: visible;
                 transform: translateY(0);
             }
@@ -524,6 +525,7 @@ header{
         }
     }
 }
+
 
 
 
