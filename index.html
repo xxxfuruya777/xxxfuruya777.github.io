@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -21,15 +20,15 @@
                 ☰
             </button>
             <ul class="nav-links">
-                <li class="nav-item"><a href="#">Điểm đến</a></li>
-                <li class="nav-item"><a href="#">Liên hệ</a></li>
+                <li class="nav-item"><a href="#">Explore</a></li>
+                <li class="nav-item"><a href="#">Hot Deals</a></li>
                 <li class="nav-item"><a href="#">App</a></li>
-                <li class="nav-item"><a href="#">Đăng nhập</a></li>
+                <li class="nav-item"><a href="#">Sign in</a></li>
                 <li class="nav-item choose">
-                        <a href="#">VI  ▼</a>
+                        <a href="#">EN  ▼</a>
                         <div class="langlist">
-                            <a href="#">Tiếng Việt</a>
                             <a href="#">English</a>
+                            <a href="#">Tiếng Việt</a>
                             <a href="#">Français</a>
                             <a href="#">Español</a>
                         </div>
@@ -43,10 +42,12 @@
         <div class="intro">
             <div class="intro-text">
                 <div class="text">
-                    <h1>TRẠM - chạm vào để phiêu lưu</h1>
-                    <p>Trạm đồng hành cùng bạn trên mọi hành trình. Từ đặt tour, nhà hàng, khách sạn cho đến những trải nghiệm mới, chuyến đi của bạn chưa bao giờ dễ dàng hơn! </p>
+                    <h1>TRAM - touch to adventure</h1>
+                    <p>Tram accompanies you on all of your trips. From booking tours, restaurants and hotels to whole new experiences, travelling's never been made easier!</p>
                     <div class="download">
-                        <img src="images/qr_code_v3.png" alt="qrcode" id="qrcode">
+                        <div class="qr-box">
+                            <img src="images/qr_code_v2.png" alt="qrcode" id="qrcode">
+                        </div>
                         <img src="images/appstore.png" alt="appstore">
                         <img src="images/google_play.png" alt="googleplay">
                     </div>
@@ -61,8 +62,8 @@
             <div class="slide">
                 <div class="panels">
                     <div class="text">
-                        <h2>Khám phá các điểm đến độc đáo</h2>
-                        <p>Bắt đầu trải nghiệm mới. Book những tour có hướng dẫn, phiêu lưu, và du lịch văn hóa với các đối tác tin cậy của chúng tôi.</p>
+                        <h2>Explore unique destinations</h2>
+                        <p>Start a new experience by booking guided tours, voyages, or cultural travels with our partners.</p>
                     </div>
                     <div class="screen">
                         <img src="images/phoneMockup_tour.png" alt="">
@@ -72,8 +73,8 @@
             <div class="slide">
                 <div class="panels">
                     <div class="text">
-                        <h2>Trải nghiệm ẩm thực địa phương</h2>
-                        <p>Tìm kiếm các nhà hàng địa phương được đánh giá tốt với review thật. Đặt bàn nhanh chóng và trải nghiệm ẩm thực hợp khẩu vị của bạn.</p>
+                        <h2>Taste the local cuisine</h2>
+                        <p>Look up highly rated local restaurants with real reviews. Pre-order a table promptly and enjoy the food satisfying your palate.</p>
                     </div>
                     <div class="screen">
                         <img src="images/phoneMockup_resto.png" alt="">
@@ -83,8 +84,8 @@
             <div class="slide">
                 <div class="panels">
                     <div class="text">
-                        <h2>Tìm nơi dừng chân lý tưởng</h2>
-                        <p>Khám phá và book các khách sạn phù hợp với phong cách và túi tiền của bạn. Deal tốt nhất, từ các khu resort sang trọng cho đến các nhà nghỉ ấm cúng.</p>
+                        <h2>Find ideal lodgings</h2>
+                        <p>Explore and book affordable hotels fitting your style. Best deals are here, from luxurious resorts to cozy inns.</p>
                     </div>
                     <div class="screen">
                         <img src="images/phoneMockup_hotel.png" alt="">
@@ -105,27 +106,36 @@
                     <img src="images/phoneMockup_hotel.png" alt="">
                 </div>
             </div>
-            <div class="panels">
+            <div class="panels" id="panel">
                 <div class="textshot" id="cont1">
-                    <img src="images/icon_tour.png" alt="">
+                    <div class="hoverdiv"></div>
+                    <div class="text-icon">
+                        <img src="images/icon_tour.png" alt="">
+                        <h2>Explore unique destinations</h2>
+                    </div>
                     <div class="text">
-                        <h2>Khám phá các điểm đến độc đáo</h2>
-                        <p>Bắt đầu trải nghiệm mới. Book những tour có hướng dẫn, phiêu lưu, và du lịch văn hóa với các đối tác tin cậy của chúng tôi.</p>
+                        <p>Start a new experience by booking guided tours, voyages, or cultural travels with our partners.</p>
                     </div>
                     
                 </div>
                 <div class="textshot" id="cont2">
-                    <img src="images/icon_food.png" alt="">
+                    <div class="hoverdiv"></div>
+                    <div class="text-icon">
+                        <img src="images/icon_food.png" alt="">
+                        <h2>Taste the local cuisine</h2>
+                    </div>
                     <div class="text">
-                        <h2>Trải nghiệm ẩm thực địa phương</h2>
-                        <p>Tìm kiếm các nhà hàng địa phương được đánh giá tốt với review thật. Đặt bàn nhanh chóng và trải nghiệm ẩm thực hợp khẩu vị của bạn.</p>
+                        <p>Look up highly rated local restaurants with real reviews. Pre-order a table promptly and enjoy the food satisfying your palate.</p>
                     </div>
                 </div>
                 <div class="textshot" id="cont3">
-                    <img src="images/icon_hotel.png" alt="">
+                    <div class="hoverdiv"></div>
+                    <div class="text-icon">
+                        <img src="images/icon_hotel.png" alt="">
+                        <h2>Find ideal lodgings</h2>
+                    </div>
                     <div class="text">
-                        <h2>Tìm nơi dừng chân lý tưởng</h2>
-                        <p>Khám phá và book các khách sạn phù hợp với phong cách và túi tiền của bạn. Deal tốt nhất, từ các khu resort sang trọng đến các nhà nghỉ ấm cúng.</p>                        
+                        <p>Explore and book affordable hotels fitting your style. Best deals are here, from luxurious resorts to cozy inns.</p>                        
                     </div>
                 </div>
             </div>
@@ -133,7 +143,7 @@
 
         <div class="demo">
             <div class="democont">
-                <h2>Xem video giới thiệu</h2>
+                <h2>Promo video</h2>
                 <iframe src="https://www.youtube.com/embed?v=w1Hsn0rcPcY" title="Tram App - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
@@ -143,7 +153,7 @@
         </div>
 
         <div class="contact">
-            <h2>Liên hệ với chúng tôi</h2>
+            <h2>Contact us</h2>
             <div class="social">
                 <a href="https://www.facebook.com/profile.php?id=61576964316630" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
@@ -158,10 +168,10 @@
             <div class="text-now">
                 <img src="images/logo.png" alt="logo" class="logo">
                 <h1>
-                    Hãy tải app, lên trạm, và bắt đầu chuyến đi!
+                    Install our app, get on the Tram, and let's go!
                 </h1>
             </div>
-            <div class="download">
+            <div class="install">
                 <img src="images/qr_code_v2.png" alt="qrcode" id="qrcode">
                 <img src="images/appstore.png" alt="appstore">
                 <img src="images/google_play.png" alt="googleplay">
@@ -170,12 +180,30 @@
     </footer>
 </body>
 <script>
-    $('#cont1').show();
-    $('.textshot').mouseover(function() {
-        var id = $(this).attr('id');
-        $('.screenshot').hide();
-        $('#' + id).show();
+    document.getElementById('cont1').style.display = "block";
+    const texts = document.querySelectorAll('.textshot');
+    texts.forEach(element => {
+        element.addEventListener('mouseover', function(){
+            document.querySelectorAll('.screenshot').forEach(element => {
+                element.style.display = 'none';
+            });
+
+            var ids = this.id;
+            document.getElementById(ids).style.display = "block";            
+        })
     });
+
+
+/*  for(i = 0; i < texts.length; i++){
+        texts[i].addEventListener('mouseover', function(){
+            document.querySelectorAll('.screenshot').forEach(element => {
+                element.style.display = 'none';
+            });
+
+            var ids = this.id;
+            document.getElementById(ids).style.display = "block";
+        });
+    }*/
 </script>
 </html>
 
