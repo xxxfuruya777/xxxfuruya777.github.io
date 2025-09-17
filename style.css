@@ -435,7 +435,7 @@ header{
                 transform: translateY(-15vh);
                 line-height: 1.5;
                 opacity: 0;
-                transition: all 1s linear 0.3s;
+                transition: opacity 1s linear 0.3s, transform 1s linear 1s;
             }
             .text h2{
                 font-size: calc(16px + 1.3vw) !important;
@@ -525,6 +525,7 @@ header{
         }
     }
 }
+
 
 
 
