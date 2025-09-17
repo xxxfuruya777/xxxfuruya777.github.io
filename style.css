@@ -259,6 +259,12 @@ header{
             transform: translateY(-100%);
             transition: transform 0.3s ease-out, opacity 0.3s ease-out; 
         }
+    .nav-toggle{
+            display: block;
+            position: absolute;
+            right: 1rem;
+            top: 1rem; 
+        } 
     }
 
 @media only screen and (max-width: 768px) {
@@ -509,5 +515,6 @@ header{
         }
     }
 }
+
 
 
