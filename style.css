@@ -240,14 +240,14 @@ header{
         } 
     }
     @media (min-width: 769px){
-        .nav{
+        .nav-links{
             display: flex; 
         } 
     }
 
 /*mobile only*/
     @media (max-width: 768px){
-    .nav{
+    .nav-links{
             position: absolute;
             top: 100%;
             right: 0;
@@ -515,6 +515,7 @@ header{
         }
     }
 }
+
 
 
 
