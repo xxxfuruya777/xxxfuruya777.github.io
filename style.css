@@ -93,34 +93,6 @@ header{
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-    @media (min-width: 769px){
-        .header-link{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 0;
-            padding-bottom: 0; 
-        } 
-    }
-    @media (min-width: 769px){
-        .nav{
-            display: flex; 
-        } 
-    }
-    @media (max-width: 768px){
-    .nav{
-            position: absolute;
-            top: 100%;
-            right: 0;
-            left: 0;
-            z-index: -1;
-            background-color: #3366cc;
-            visibility: hidden;
-            opacity: 0;
-            transform: translateY(-100%);
-            transition: transform 0.3s ease-out, opacity 0.3s ease-out; 
-        }
-    }
     .nav-item a{
         display: block;
         padding: 1.5rem 1rem; 
@@ -257,7 +229,38 @@ header{
     }
 }
 
+/*RESPONSIVE*/
+  @media (min-width: 769px){
+        .header-link{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 0;
+            padding-bottom: 0; 
+        } 
+    }
+    @media (min-width: 769px){
+        .nav{
+            display: flex; 
+        } 
+    }
+
 /*mobile only*/
+    @media (max-width: 768px){
+    .nav{
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            z-index: -1;
+            background-color: #3366cc;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out; 
+        }
+    }
+
 @media only screen and (max-width: 768px) {
     body{
         text-align: center; /***/
@@ -506,4 +509,5 @@ header{
         }
     }
 }
+
 
