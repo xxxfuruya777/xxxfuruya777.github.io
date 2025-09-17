@@ -89,7 +89,7 @@ header{
         position: relative;
         background-color: #3366cc;
     }
-    .header-link {
+    .header-links{
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
@@ -231,7 +231,7 @@ header{
 
 /*RESPONSIVE*/
   @media (min-width: 769px){
-        .header-link{
+        .header-links{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -515,6 +515,7 @@ header{
         }
     }
 }
+
 
 
 
