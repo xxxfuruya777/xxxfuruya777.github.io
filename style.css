@@ -429,8 +429,13 @@ header{
                 margin-right: calc(0.5rem + 1.6vw);
                 transition: all 0.3s linear;
             }
+            .text{
+                position: relative;
+            }
             .text p{
                 font-size: calc(13px + 0.4vw) !important;
+                position: absolute;
+                bottom: -1000px;
                 line-height: 1.5;
                 opacity: 0;
                 transition: all 0.3s linear 0.3s;
@@ -452,6 +457,7 @@ header{
             }
             .textshot:hover .text p{
                 opacity: 1.0;
+                bottom: 0px;
             }
 
         .slide{
@@ -520,6 +526,7 @@ header{
         }
     }
 }
+
 
 
 
