@@ -430,7 +430,6 @@ header{
                 transition: all 0.3s linear;
             }
             .text p{
-                font-size: 0;
                 line-height: 1.5;
                 opacity: 0;
                 transition: all 0.3s linear 0.3s;
@@ -521,6 +520,7 @@ header{
         }
     }
 }
+
 
 
 
