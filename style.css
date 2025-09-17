@@ -453,7 +453,6 @@ header{
                 margin: 0;
             }
             .textshot:hover .text p{
-                display: block;
                 opacity: 1.0;
                 visibility: visible;
                 transform: translateY(0);
@@ -525,6 +524,7 @@ header{
         }
     }
 }
+
 
 
 
