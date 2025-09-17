@@ -454,7 +454,7 @@ header{
             }
             .textshot:hover .text p{
                 opacity: 1.0;
-                bottom: 0px;
+                bottom: auto;
             }
 
         .slide{
@@ -523,6 +523,7 @@ header{
         }
     }
 }
+
 
 
 
