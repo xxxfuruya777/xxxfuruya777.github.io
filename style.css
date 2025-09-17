@@ -61,7 +61,7 @@ header{
         position: relative;
         display: block;
     }
-        .langlist {
+        .langlist{
             display: none;
             position: absolute;
             background-color: #3366cc;
@@ -70,7 +70,7 @@ header{
             padding: 3px 4px;
             z-index: 1;
         }
-        .choose:hover .langlist {
+        .choose:hover .langlist{
             display: block;
         }
 
@@ -81,20 +81,20 @@ header{
         font-size: 1.5rem;
         cursor: pointer;
     }
-    .brand {
+    .brand{
         font-weight: bold;
         font-size: 20px; 
     }
-    .site-header {
+    .site-header{
         position: relative;
         background-color: #3366cc;
     }
-    .site-header__wrapper {
+    .header-link {
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-    @media (min-width: 769px) {
-        .site-header__wrapper {
+    @media (min-width: 769px){
+        .header-link{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -102,43 +102,28 @@ header{
             padding-bottom: 0; 
         } 
     }
-    @media (min-width: 769px) {
-        .nav__wrapper {
+    @media (min-width: 769px){
+        .nav{
             display: flex; 
         } 
     }
-    @media (max-width: 768px) {
-    .nav__wrapper {
-        position: absolute;
-        top: 100%;
-        right: 0;
-        left: 0;
-        z-index: -1;
-        background-color: #3366cc;
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(-100%);
-        transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
-        .nav__wrapper.active {
-            visibility: visible;
-            opacity: 1;
-            transform: translateY(0); 
-        } 
+    @media (max-width: 768px){
+    .nav{
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            z-index: -1;
+            background-color: #3366cc;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out; 
+        }
     }
-    .nav__item a {
+    .nav-item a{
         display: block;
         padding: 1.5rem 1rem; 
-    }
-    .nav__toggle {
-        display: none; 
-    }
-    @media (max-width: 768px) {
-        .nav__toggle {
-            display: block;
-            position: absolute;
-            right: 1rem;
-            top: 1rem; 
-        } 
     }
 
 /*mobile*/
@@ -521,3 +506,4 @@ header{
         }
     }
 }
+
