@@ -61,7 +61,7 @@ header{
         position: relative;
         display: block;
     }
-        .langlist{
+        .langlist {
             display: none;
             position: absolute;
             background-color: #3366cc;
@@ -70,7 +70,7 @@ header{
             padding: 3px 4px;
             z-index: 1;
         }
-        .choose:hover .langlist{
+        .choose:hover .langlist {
             display: block;
         }
 
@@ -93,11 +93,53 @@ header{
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
-    .nav-item a{
+    @media (min-width: 769px){
+        .header-links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 0;
+            padding-bottom: 0; 
+        } 
+    }
+    @media (min-width: 769px) {
+        .nav-links{
+            display: flex; 
+        } 
+    }
+    @media (max-width: 768px) {
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        background-color: #3366cc;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+        .nav-links.active {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0); 
+        } 
+    }
+    .nav-item a {
         display: block;
         padding: 1.5rem 1rem; 
     }
-
+    .nav-toggle {
+        display: none; 
+    }
+    @media (max-width: 768px) {
+        .nav-toggle {
+            display: block;
+            position: absolute;
+            right: 1rem;
+            top: 1rem; 
+        } 
+    }
 /*mobile*/
 .intro{
     background-image: url(images/Pool.jpg);
@@ -230,43 +272,7 @@ header{
 }
 
 /*RESPONSIVE*/
-  @media (min-width: 769px){
-        .header-links{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 0;
-            padding-bottom: 0; 
-        } 
-    }
-    @media (min-width: 769px){
-        .nav-links{
-            display: flex; 
-        } 
-    }
-
 /*mobile only*/
-    @media (max-width: 768px){
-    .nav-links{
-            position: absolute;
-            top: 100%;
-            right: 0;
-            left: 0;
-            z-index: -1;
-            background-color: #3366cc;
-            visibility: hidden;
-            opacity: 0;
-            transform: translateY(-100%);
-            transition: transform 0.3s ease-out, opacity 0.3s ease-out; 
-        }
-    .nav-toggle{
-            display: block;
-            position: absolute;
-            right: 1rem;
-            top: 1rem; 
-        } 
-    }
-
 @media only screen and (max-width: 768px) {
     body{
         text-align: center; /***/
@@ -515,6 +521,7 @@ header{
         }
     }
 }
+
 
 
 
