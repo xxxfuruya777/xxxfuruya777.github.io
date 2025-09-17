@@ -431,7 +431,7 @@ header{
             }
             .text p{
                 font-size: calc(13px + 0.4vw) !important;
-                position: relative;
+                position: absolute;
                 bottom: -1000px;
                 line-height: 1.5;
                 opacity: 0;
@@ -454,7 +454,7 @@ header{
             }
             .textshot:hover .text p{
                 opacity: 1.0;
-                bottom: auto;
+                bottom: 0px;
             }
 
         .slide{
@@ -523,6 +523,7 @@ header{
         }
     }
 }
+
 
 
 
