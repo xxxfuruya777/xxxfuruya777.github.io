@@ -431,8 +431,7 @@ header{
             }
             .text p{
                 font-size: calc(13px + 0.4vw) !important;
-                position: absolute;
-                bottom: -1000px;
+                transform: scale(0);
                 line-height: 1.5;
                 opacity: 0;
                 transition: all 0.3s linear 0.3s;
@@ -454,7 +453,7 @@ header{
             }
             .textshot:hover .text p{
                 opacity: 1.0;
-                bottom: 0px;
+                transform: scale(1);
             }
 
         .slide{
@@ -523,6 +522,7 @@ header{
         }
     }
 }
+
 
 
 
