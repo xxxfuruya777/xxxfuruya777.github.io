@@ -430,12 +430,12 @@ header{
                 transition: all 0.3s linear;
             }
             .text p{
-                visibility: hidden;
-                font-size: 0;
+                display: none;
+                font-size: calc(13px + 0.4vw) !important;
                 transform: translateY(-15vh);
                 line-height: 1.5;
                 opacity: 0;
-                transition: opacity 1s linear 0.3s, translateY 1s linear 0.3s, font-size 0s linear;
+                transition: all 1s linear 0.3s;
             }
             .text h2{
                 font-size: calc(16px + 1.3vw) !important;
@@ -453,8 +453,8 @@ header{
                 margin: 0;
             }
             .textshot:hover .text p{
+                display: block;
                 opacity: 1.0;
-                font-size: calc(13px + 0.4vw) !important;
                 visibility: visible;
                 transform: translateY(0);
             }
@@ -525,6 +525,7 @@ header{
         }
     }
 }
+
 
 
 
