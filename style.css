@@ -432,7 +432,7 @@ header{
             .text p{
                 display: none;
                 font-size: calc(13px + 0.4vw) !important;
-                transform: translate(0px; -15vh);
+                transform: translateY(-15vh);
                 line-height: 1.5;
                 opacity: 0;
                 transition: all 0.3s linear 0.3s;
@@ -455,7 +455,7 @@ header{
             .textshot:hover .text p{
                 display: block;
                 opacity: 1.0;
-                transform: translate(0px; 0px);
+                transform: translateY(0);
             }
 
         .slide{
@@ -524,6 +524,7 @@ header{
         }
     }
 }
+
 
 
 
