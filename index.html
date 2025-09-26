@@ -107,7 +107,7 @@
                 </div>
             </div>
             <div class="panels" id="panel">
-                <div class="textshot" id="cont1">
+                <div class="textshot" id="hover-1">
                     <div class="hoverdiv"></div>
                     <div class="text-icon">
                         <img src="images/icon_tour.png" alt="The icon used for Tours">
@@ -118,7 +118,7 @@
                     </div>
                     
                 </div>
-                <div class="textshot" id="cont2">
+                <div class="textshot" id="hover-2">
                     <div class="hoverdiv"></div>
                     <div class="text-icon">
                         <img src="images/icon_food.png" alt="The icon used for Resto">
@@ -128,7 +128,7 @@
                         <p>Look up highly rated local restaurants with real reviews. Pre-order a table promptly and enjoy the food satisfying your palate.</p>
                     </div>
                 </div>
-                <div class="textshot" id="cont3">
+                <div class="textshot" id="hover-3">
                     <div class="hoverdiv"></div>
                     <div class="text-icon">
                         <img src="images/icon_hotel.png" alt="The icon used for Hotel">
@@ -188,7 +188,8 @@
                 element.style.display = 'none';
             });
 
-            var ids = this.id;
+            var idx = this.id;
+            var ids = "cont" + idx.slice(-1);
             document.getElementById(ids).style.display = "block";            
         })
     });
@@ -199,15 +200,13 @@
             document.querySelectorAll('.screenshot').forEach(element => {
                 element.style.display = 'none';
             });
-
-            var ids = this.id;
-            document.getElementById(ids).style.display = "block";
         });
     }*/
 </script>
     
 </body>
 </html>
+
 
 
 
