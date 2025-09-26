@@ -282,7 +282,7 @@ header{
     .intro{
         padding: 10% 5% 0; /***/
     }
-        .intro-text{
+        .text{
             margin-bottom: 3rem;
         }
         .intro-text > .mockup{
@@ -550,5 +550,6 @@ header{
         }
     }
 }
+
 
 
