@@ -155,10 +155,6 @@ header{
     .intro-text .download{
         display: none;
     }
-    .intro h1{
-        margin-bottom: 3rem;
-    }
-
 
 .demo{
     background-image: linear-gradient(#ffffcc, #ffffff);
@@ -282,6 +278,9 @@ header{
     .intro{
         padding: 10% 5% 0; /***/
     }
+        .intro h1{
+            margin-bottom: 1.5rem;
+        }
         .text{
             margin-bottom: 3rem;
         }
@@ -381,6 +380,9 @@ header{
         }
             .intro-text > .mockup{
                 min-width: 350px;
+            }
+            .intro h1{
+                margin-bottom: 3rem;
             }
         .text{
             padding: 0 1rem;
@@ -550,6 +552,7 @@ header{
         }
     }
 }
+
 
 
 
