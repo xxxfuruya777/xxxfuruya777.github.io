@@ -30,9 +30,6 @@ p{
     line-height: 1.2;
 }
 
-.intro h1{
-    margin-bottom: 3rem;
-}
 
 /*header & navigation*/
 header{
@@ -158,6 +155,9 @@ header{
     .intro-text .download{
         display: none;
     }
+    .intro h1{
+        margin-bottom: 3rem;
+    }
 
 
 .demo{
@@ -282,6 +282,9 @@ header{
     .intro{
         padding: 10% 5% 0; /***/
     }
+        .intro-text{
+            margin-bottom: 3rem;
+        }
         .intro-text > .mockup{
             width: 270px; /***/
             height: 68vh; /***/
@@ -547,4 +550,5 @@ header{
         }
     }
 }
+
 
